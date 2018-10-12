@@ -23,7 +23,14 @@ This is the flow of procedures before doing any optimization. Too lazy to draw a
 We will then be ready to execute *Optimise?.m* procedures.
 
 ## Optimization Algorithm
+### Greedy Heuristic
+* [OptimiseGreedy.m](./OptimiseGreedy.m) is pretty self-ish explanatary.
+* [OptimiseGreedyCandle.m](./OptimiseGreedyCandle.m) produces candle plots for greedy heuristic.
+### Centralized Paradigm
+* [OptimiseCentralised.m](./OptimiseCentralised.m) solves a standard two-dimensional constrained optimization problem.
+* [OptimiseCentralisedwithDiffPS.m.m](./OptimiseCentralisedwithDiffPS.m) tries to solve problems with different problem size (PS). It tests station size 50, 100, 150, ..., 700 to be precise.
 
+### Distributed Algorithm
 
 
 ## Other Functions
