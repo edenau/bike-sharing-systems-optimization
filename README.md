@@ -27,6 +27,7 @@ We will then be ready to execute *Optimise?.m* procedures.
 ### Greedy Heuristic
 * [OptimiseGreedy.m](./OptimiseGreedy.m) is pretty self-ish explanatary.
 * [OptimiseGreedyCandle.m](./OptimiseGreedyCandle.m) produces candle plots for greedy heuristic. Greedy heuristic generates different solutions when the station sequence changes. The plots can see how solutions vary.
+
 ### Centralized Paradigm
 * [OptimiseCentralised.m](./OptimiseCentralised.m) solves a standard two-dimensional constrained optimization problem.
 * [OptimiseCentralisedwithDiffPS.m.m](./OptimiseCentralisedwithDiffPS.m) tries to solve problems with different problem size (PS). It tests station size 50, 100, 150, ..., 700 to be precise.
@@ -34,6 +35,11 @@ We will then be ready to execute *Optimise?.m* procedures.
 
 ### Distributed Algorithm
 
+### Novel TDG Algorithm
+TDG consists of a truncated distributed algorithm (when to interupt is a design choice), followed by a double-greedy approach.
+* [OptimiseTDG.m](./OptimiseTDG.m) is the implementation of the TDG algorithm.
+* [OptimiseTDGSimplerG.m](./OptimiseTDGSimplerG.m) tries to implement a simpler greedy component in TDG.
+* [OptimiseTDGTightening.m](./OptimiseTDGTightening.m) tries to do temporary proportional (station fill level) tightening to see if there would be any improvement in performance. Did not seem to be the case.
 
 ## Other Functions
 * [CapacityCount.m](./CapacityCount.m) checks if there is enough parking spaces in the whole system for all time. If not, optimization problem must be infeasible. It does not matter at all if you are sure that the system must have empty spaces somewhere.
