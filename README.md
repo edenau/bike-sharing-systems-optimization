@@ -1,5 +1,5 @@
 # A Generic Model and a Distributed Algorithm for Optimization of Station Based Bike Sharing Systems
-This repo is intended only for researchers that are working on the project. I might be a good researcher but I am no good programmer as my comments might be confusing and I am new to writing a ReadMe file. Do correct me if I got something wrong. I understand there are lots of codes and files but don't panic and do let me explain every file and what you probably want to do next. Do take my codes and comments with a grain of salt as I was in a hurry and some comments are added months after.
+This repo is intended only for researchers that are working on the project. I might be a good researcher but I am no good programmer as my comments might be confusing and I am new to writing a ReadMe file. Do correct me if I got something wrong. I understand there are lots of codes and files but don't panic and do let me explain every file and what you probably want to do next. Do take my codes and comments with a grain of salt as I was in a hurry and some comments were added months after.
 
 ## Flow before Optimization
 This is the flow of procedures before doing any optimization. Too lazy to draw a fancy one.
