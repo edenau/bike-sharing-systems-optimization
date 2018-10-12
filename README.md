@@ -29,6 +29,7 @@ We will then be ready to execute *Optimise?.m* procedures.
 ### Centralized Paradigm
 * [OptimiseCentralised.m](./OptimiseCentralised.m) solves a standard two-dimensional constrained optimization problem.
 * [OptimiseCentralisedwithDiffPS.m.m](./OptimiseCentralisedwithDiffPS.m) tries to solve problems with different problem size (PS). It tests station size 50, 100, 150, ..., 700 to be precise.
+* [CompareComputation.m](./CompareComputation.m) compares computation time of centralized paradigm when PS changes. It is found that time required increases exponentially as PS increases. Information extracted from this procedure can be leveraged to generate a plot.
 
 ### Distributed Algorithm
 
