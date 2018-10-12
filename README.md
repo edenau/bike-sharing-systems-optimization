@@ -34,6 +34,10 @@ We will then be ready to execute *Optimise?.m* procedures.
 * [CompareComputation.m](./CompareComputation.m) compares computation time of centralized paradigm when PS changes. It is found that time required increases exponentially as PS increases. Information extracted from this procedure can be leveraged to generate a plot.
 
 ### Distributed Algorithm
+* [OptimiseDistributed2.m](./OptimiseDistributed2.m) is the standard distributed algorithm we developed. We used β=10.
+* [CompareBeta.m](./CompareBeta.m) calls [OptimiseDistributed2Beta.m](./OptimiseDistributed2Beta.m) and tweaks the only parameter β in the distributed algorithm. It does not make a huge difference in our case.
+* [OptimiseDistributed2CheckMiddle.m](./OptimiseDistributed2CheckMiddle.m) allows us to do optimization NOT starting at time 1. For instance, we already have solutions for time 1 to 27, the optimization solver can proceed at time 28. Simply change the parameter TPOINT for starting at different time slices.
+* [OptimiseDistributed2withDiffPS.m](./OptimiseDistributed2withDiffPS.m) tries to solve problems with different problem size (PS). It tests station size 50, 100, 150, ..., 700 to be precise.
 
 ### Novel TDG Algorithm
 TDG consists of a truncated distributed algorithm (when to interupt is a design choice), followed by a double-greedy approach.
