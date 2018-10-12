@@ -46,7 +46,7 @@ TDG consists of a truncated distributed algorithm (when to interupt is a design 
 * [OptimiseTDGTightening.m](./OptimiseTDGTightening.m) tries to do temporary proportional (station fill level) tightening to see if there would be any improvement in performance. Did not seem to be the case.
 
 ### Obsolete Ones
-These algorithms are no longer used.
+These algorithms are no longer used. They are put in folder [obsolete](./obsolete/) to avoid confusion.
 * [OptimiseDistributed3.m](./obsolete/OptimiseDistributed3.m) tried to decouple the two-dimensional setting in another dimension (direction). It should work but for some reasons I did not go for this.
 * [OptimiseDistributed2ManualRoundoff.m](./obsolete/OptimiseDistributed2ManualRoundoff.m) tried to solve the roundoff problem faced in distributed algorithm. For instance, when the algorithm tried to relocate 0.33, 0.33, and 0.33 users to station A, B, and C respectively, if we round off all of these numbers naïvely, the total number of users does not conserve. Not sure why I did not use this code anymore, it probably did not work well.
 
