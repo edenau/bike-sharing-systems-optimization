@@ -20,7 +20,11 @@ This is the flow of procedures before doing any optimization. Too lazy to draw a
 * [SimulateStations.m](./SimulateStations.m) simulates stations with their fill levels *after GenerateJourneys.m*.
 * [DeleteDistantStations.m](./DeleteDistantStations.m) deletes distant stations *after SimulateStations.m*. Make sure this procedure runs *once* only.
 
-We will then be ready to execute Optimise?.m procedures.
+We will then be ready to execute *Optimise?.m* procedures.
+
+## Optimization Algorithm
+
+
 
 ## Other Functions
 * [CapacityCount.m](./CapacityCount.m) checks if there is enough parking spaces in the whole system for all time. If not, optimization problem must be infeasible. It does not matter at all if you are sure that the system must have empty spaces somewhere.
