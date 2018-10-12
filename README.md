@@ -34,7 +34,7 @@ We will then be ready to execute *Optimise?.m* procedures.
 * [CompareComputation.m](./CompareComputation.m) compares computation time of centralized paradigm when PS changes. It is found that time required increases exponentially as PS increases. Information extracted from this procedure can be leveraged to generate a plot.
 
 ### Distributed Algorithm
-* [OptimiseDistributed2.m](./OptimiseDistributed2.m) is the standard distributed algorithm we developed. We used β=10.
+* [OptimiseDistributed2.m](./OptimiseDistributed2.m) is the standard distributed algorithm I developed. I used β=10.
 * [CompareBeta.m](./CompareBeta.m) calls [OptimiseDistributed2Beta.m](./OptimiseDistributed2Beta.m) and tweaks the only parameter β in the distributed algorithm. It does not make a huge difference in our case.
 * [OptimiseDistributed2CheckMiddle.m](./OptimiseDistributed2CheckMiddle.m) allows us to do optimization NOT starting at time 1. For instance, we already have solutions for time 1 to 27, the optimization solver can proceed at time 28. Simply change the parameter TPOINT for starting at different time slices.
 * [OptimiseDistributed2withDiffPS.m](./OptimiseDistributed2withDiffPS.m) tries to solve problems with different problem size (PS). It tests station size 50, 100, 150, ..., 700 to be precise.
@@ -44,6 +44,11 @@ TDG consists of a truncated distributed algorithm (when to interupt is a design 
 * [OptimiseTDG.m](./OptimiseTDG.m) is the implementation of the TDG algorithm.
 * [OptimiseTDGSimplerG.m](./OptimiseTDGSimplerG.m) tries to implement a simpler greedy component in TDG.
 * [OptimiseTDGTightening.m](./OptimiseTDGTightening.m) tries to do temporary proportional (station fill level) tightening to see if there would be any improvement in performance. Did not seem to be the case.
+
+### Obsolete Ones
+These algorithms are no longer used.
+* [OptimiseDistributed3.m](./obsolete/OptimiseDistributed3.m) tried to decouple the two-dimensional setting in another dimension (direction). It should work but for some reasons I did not go for this.
+* [OptimiseDistributed2ManualRoundoff.m](./obsolete/OptimiseDistributed2ManualRoundoff.m) tried to solve the roundoff problem faced in distributed algorithm. For instance, when the algorithm tried to relocate 0.33, 0.33, and 0.33 users to station A, B, and C respectively, if we round off all of these numbers naïvely, the total number of users does not conserve. Not sure why I did not use this code anymore, it probably did not work well.
 
 ## Other Functions
 * [CapacityCount.m](./CapacityCount.m) checks if there is enough parking spaces in the whole system for all time. If not, optimization problem must be infeasible. It does not matter at all if you are sure that the system must have empty spaces somewhere.
