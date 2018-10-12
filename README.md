@@ -25,7 +25,7 @@ We will then be ready to execute *Optimise?.m* procedures.
 ## Optimization Algorithm
 ### Greedy Heuristic
 * [OptimiseGreedy.m](./OptimiseGreedy.m) is pretty self-ish explanatary.
-* [OptimiseGreedyCandle.m](./OptimiseGreedyCandle.m) produces candle plots for greedy heuristic.
+* [OptimiseGreedyCandle.m](./OptimiseGreedyCandle.m) produces candle plots for greedy heuristic. Greedy heuristic generates different solutions when the station sequence changes. The plots can see how solutions vary.
 ### Centralized Paradigm
 * [OptimiseCentralised.m](./OptimiseCentralised.m) solves a standard two-dimensional constrained optimization problem.
 * [OptimiseCentralisedwithDiffPS.m.m](./OptimiseCentralisedwithDiffPS.m) tries to solve problems with different problem size (PS). It tests station size 50, 100, 150, ..., 700 to be precise.
