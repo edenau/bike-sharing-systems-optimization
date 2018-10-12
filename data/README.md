@@ -1,5 +1,5 @@
 # Data
-Data are extracted from Santander Cycle Hire Scheme, Transport for London. Click [here](http://cycling.data.tfl.gov.uk/) to get those raw data. 
+Data are extracted from Santander Cycle Hire Scheme, Transport for London. Click [here](http://cycling.data.tfl.gov.uk/) to get those raw, updated, unclean(?) data. 
 
 ## Journey Data
 Cleaned journey data are stored in the following files:
