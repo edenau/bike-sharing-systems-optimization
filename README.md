@@ -22,7 +22,7 @@ This is the flow of procedures before doing any optimization. Too lazy to draw a
 
 We will then be ready to execute Optimise?.m procedures.
 
-## Functions
-* [CapacityCount.m](./CapacityCount.m) checks if there is enough parking spaces for all time
-* [HaversineDistance.m](./HaversineDistance.m) computes distance of two points on Earth
-* [IsWeekend.m](./IsWeekend.m) determines if a day is weekday/weekend in year *2017*
+## Other Functions
+* [CapacityCount.m](./CapacityCount.m) checks if there is enough parking spaces in the whole system for all time. If not, optimization problem must be infeasible. It does not matter at all if you are sure that the system must have empty spaces somewhere.
+* [HaversineDistance.m](./HaversineDistance.m) computes distance of two points on Earth. It is called somewhere in the flow.
+* [IsWeekend.m](./IsWeekend.m) determines if a day is weekday/weekend in year *2017*. It is called somewhere in the flow.
