@@ -52,5 +52,5 @@ These algorithms are no longer used. They are put in folder [obsolete](./obsolet
 
 ## Other Functions
 * [CapacityCount.m](./CapacityCount.m) checks if there is enough parking spaces in the whole system for all time. If not, optimization problem must be infeasible. It does not matter at all if you are sure that the system must have empty spaces somewhere.
-* [HaversineDistance.m](./HaversineDistance.m) computes distance of two points on Earth. It is called somewhere in the flow.
+* [HaversineDistance.m](./HaversineDistance.m) computes distance of two latitude-longitude points on Earth. It is called somewhere in the flow.
 * [IsWeekend.m](./IsWeekend.m) determines if a day is weekday/weekend in year *2017*. It is called somewhere in the flow.
