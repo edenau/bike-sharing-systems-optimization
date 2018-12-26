@@ -1,4 +1,7 @@
 # A Generic Model and a Distributed Algorithm for Optimization of Station Based Bike Sharing Systems
+
+***Interested Reader is referred to the relevant page on my [personal webpage](https://edenau.github.io/bike-sharing/).***
+
 This repo is intended only for researchers that are working on the project. This project was proposed by [Dr Kostas Margellos](https://sites.google.com/site/margellosk/home), and was initiated by two of us.
 
 ## Flow before Optimization
